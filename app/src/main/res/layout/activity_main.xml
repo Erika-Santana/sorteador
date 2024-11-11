@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+   <EditText
+       android:id="@+id/valorUsuario"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="@string/hint"
+       android:textAlignment="center"
+       android:textSize="16sp"
+       android:inputType="number"       />
+
+
+    <Button
+        android:id="@+id/botaoSorteio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_sortear"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/botao_cor"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textview_interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sorte_1_a_1000"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/iniciarSorteio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/iniciar_o_sorteio"
+        android:textSize="30dp"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@color/material_dynamic_neutral_variant99"
+        android:textColor="#F10751"/>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/button_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/botao_sortear"
+        android:textAllCaps="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/botao_cor"/>
+
+
+
+</LinearLayout>
