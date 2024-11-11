@@ -32,12 +32,13 @@ class Draw (private val border : Int  = 0) {
         var number : Int
         do {
             number = strategy.nextNumber()
-            if (history.size == border){
+            if (history.size == getHighBorder()){
 
                 number = 0
                 return number
 
             }
+
         }while (!history.add(number))
 
         /*Na verdade, o do...while vai continuar executando o strategy.nextNumber() até encontrar um número que ainda não exista no HashSet. Ou seja, ele vai repetir enquanto o número for duplicado (ou seja, já estiver no HashSet).
